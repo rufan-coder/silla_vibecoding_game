@@ -34,6 +34,9 @@
 ## 실행 주소
 + https://rufan-coder.github.io/silla_vibecoding_game/
 
+## 발표 자료 주소
++ https://gamma.app/docs/-ot3a7ssc5tfpt2p
+
 ## 📊 게임 구조 (Mermaid)
 
 ```mermaid
