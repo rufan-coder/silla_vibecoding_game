@@ -5,6 +5,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const startBtn = document.getElementById('start-btn');
     const restartBtn = document.getElementById('restart-btn');
     const startMessage = document.getElementById('start-message');
+    const previousScoreDisplay = document.getElementById('previous-score');
 
     const width = 8;
     const squares = [];
@@ -17,6 +18,7 @@ document.addEventListener('DOMContentLoaded', () => {
     ];
 
     let score = 0;
+    let previousScore = 0;
     let timeLeft = 60;
     let timerId = null;
     let gameLoopId = null;
@@ -77,6 +79,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     function startGame() {
+
         startMessage.style.display = 'none';
         generateValidBoard();
         score = 0;
@@ -98,6 +101,8 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     function endGame() {
+        previousScore = score;
+        previousScoreDisplay.innerHTML = previousScore;
         clearInterval(timerId);
         clearInterval(gameLoopId);
         removeDragListeners();
