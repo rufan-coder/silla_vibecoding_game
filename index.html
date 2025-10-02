@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juwel Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Juwel Game</h1>
+    <p class="instructions">보석을 드래그하여 가로,세로로 3개 이상 연결되게 해서 지우세요.</p>
+    <div class="info-container">
+        <div class="score-board">
+            <h3>점수</h3>
+            <h1 id="score">0</h1>
+        </div>
+        <div class="timer-board">
+            <h3>시간</h3>
+            <h1 id="timer">60</h1>
+        </div>
+    </div>
+    <div class="grid" id="game-board">
+        <div id="start-message">시작 버튼을 누르면 보석이 나타납니다</div>
+    </div>
+    <div class="controls">
+        <button id="start-btn">Start</button>
+        <button id="restart-btn" class="hidden">Restart</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
