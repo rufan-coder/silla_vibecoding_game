@@ -24,7 +24,7 @@
 
 
 ## 실행 주소
-+ https://github.com/rufan-coder/silla_vibecoding_game
++ https://rufan-coder.github.io/silla_vibecoding_game/
 
 ## 📊 게임 구조 (Mermaid)
 
